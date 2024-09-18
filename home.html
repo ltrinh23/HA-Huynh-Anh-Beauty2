@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--============== FAVICON ==================-->   
+    <link rel="icon" href="./pictures/HA.ico" type="image/x-icon">
+
+    <!--============== REMIXICON ==================-->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--============== SWIPER CSS ==================-->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!--============== CSS ==================-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>HA Huỳnh Anh Beauty</title>
+
+</head>
+
+<body>
+    <header id="wrapper">
+    <!---Different tabs that will generate other pages-->
+        <nav id="tabs">         <!---Different tabs that will generate other pages-->
+            <div class="tracker sm-hidden"></div>      <!---small logo-->
+            <section class="showcase overflow-hidden">
+                <a href="./home.html" class="s-logo">
+                    <img src="pictures/gold-logo.PNG" alt="" class="small-logo">
+                </a>
+            </section> 
+
+            <!--3 lines for dropdown box-->
+            <div class="dropdown" style="float:right;">
+                <button class="dropbtn">
+                    <div class="menu-container" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </button>
+                
+                <!--Actual dropdown box-->
+                <div class="dropdown-content">
+                    <a id="review" href="review.html">Review</a>
+                    <a id="customer" href="customer.html">Chăm Sóc Khách Hàng</a>
+                    <!--<a id="news" href="news.html">Tin Tức</a>-->
+                    <a id="video" href="video.html">Videos</a>
+                </div>
+            </div>
+            
+            <!--About-me, Service, Contact Top bar-->
+            <div class="top">
+                <a href="#about" class="btn">Về Chúng Tôi</a>
+                <a href="#service" class="btn">Dịch Vụ</a>
+                <a href="#contact" class="btn">Liên Hệ</a>
+            </div>
+        </nav>
+
+        <!--Image to click-->
+        <center>
+            <!--Promotions Panel Slider-->
+            <div class="slider" id="promo-slider">
+                <div class="slides">
+                    <img id="trigger-image" class="thumbnail" src="pictures/gold-logo.PNG" alt="HA Huỳnh Anh Beauty">
+                    <img class="slide" src="pictures/grand-opening2.PNG" alt="promo">
+                    <img class="slide" src="pictures/promo3.PNG" alt="promo3">
+                    <img class="slide" src="pictures/promo1.JPG" alt="promo1">
+                    <img class="slide" src="pictures/promo2.JPG" alt="promo2">
+                </div>
+                <button class="previous" onclick="prevSlide()">&#10094</button>
+                <button class="next" onclick="nextSlide()">&#10095</button>
+            </div>
+        </center>
+
+    </header>
+
+    
+    <!--- ABOUT ME -->
+    <div class="container1" id="about">
+            <article class="card__article1">
+                <img src="./pictures/pfp.JPG" alt="pfp" class="card__img1">
+
+                <div class="card__data1">
+                        <h2 class="card__title1">Về Chúng Tô</h2>
+                        <span class="card__description1">
+                            HA Huỳnh Anh Beauty là nơi cung cấp các dịch vụ chăm sóc sắc đẹp tại thành phố Hồ Chí Minh. 
+                            Chúng tôi tự hào với nhân viên chuyên nghiệp và giàu kinh nghiệm, luôn sẵn sàng mang đến cho khách hàng những trải nghiệm tốt nhất. 
+                            Tại HA Huỳnh Anh Beauty, chúng tôi cam kết sử dụng các sản phẩm an toàn, chất lượng cao, và các phương pháp làm đẹp hiện đại để chăm sóc làn da và vẻ đẹp của bạn.
+                        </span>
+                </div>
+            </article>
+    </div>
+
+    <!--- SERVICE -->
+    <section class="container" id="service">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="pictures/s1.JPG" alt="image1" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h2 class="card__name">Dịch Vụ</h2>
+                                <p class="card__description">
+                                    Chúng tôi cung cấp một loạt các dịch vụ chăm sóc sắc đẹp bao gồm chăm sóc da mặt, điều trị mụn, làm sáng da, trẻ hóa da, và các liệu pháp thư giãn. 
+                                    Mỗi dịch vụ của chúng tôi đều được thiết kế để đáp ứng nhu cầu cụ thể của từng khách hàng, giúp bạn cảm thấy thoải mái và tự tin với làn da tươi trẻ và khỏe mạnh.
+                                </p>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="pictures/s2.JPG" alt="image2" class="card__img">
+                            <div class="card__shadow"></div>
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">
+                                <a href="./service.html" class="card__button">
+                                    Tìm Hiểu Thêm...Nhấp Vào Đây! 👆🏻
+                                </a>
+                            </h3>
+                        </div>
+                    </article>
+                    
+                </div>
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <div class="container1" id="contact">
+        <article class="card__article1">
+            <img src="./pictures/pfp2.JPG" alt="pfp" class="card__img1">
+
+            <div class="card__data1">
+                <h2 class="card__title1">Liên Hệ</h2>
+                <span class="card__description1">
+                    Địa chỉ: 256/18 Hàn Hải Nguyên, Phường 9, Quận 11, Thành Phố Hồ Chí Minh
+                </span>
+
+                <span class="card__description1">
+                    Email:
+                    <a href="mailto:huynhanhbeauty88@gmail.com">huynhanhbeauty88@gmail.com</a>
+                </span>
+
+                <span class="card__description1">
+                    Chúng tôi luôn sẵn sàng lắng nghe và tư vấn cho bạn. 
+                    Hãy liên hệ với chúng tôi để biết thêm chi tiết về các dịch vụ và đặt lịch hẹn.                            
+                </span>
+
+                <center>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100006769502150">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#edc967" d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/huynhanh19892013?igsh=MW00bnQxMDNreTR5aQ==">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#edc967" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@consenn2?lang=en">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#edc967" d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.3V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.6 74.6 0 1 0 52.2 71.2V0l88 0a121.2 121.2 0 0 0 1.9 22.2h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </center>    
+            </div>
+        </article>    
+    </div>
+
+    <div class="f-nav" id="foot">
+        <p class="footer">
+            © 2024 HA Huỳnh Anh Beauty. All rights reserved.
+        </p>
+    </div>
+
+    <div id="phone">
+        <br>
+        <p class="con_par2">
+            <a href="tel:093-266-9866">Zalo: 093 266 9866</a>
+        </p>
+
+        <div id="qr-code">
+            <img class="zalo" src="./pictures/zalo.jpg" alt="">
+        </div>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#xfe3f</button>
+    </div>
+
+
+
+    <!--==============SWIPER JS==================-->
+    <script src="./js/swiper-bundle.min.js"></script>
+
+    <!--==============MAIN JS==================-->
+        <script src="main.js"></script>
+
+    <!--==============PROMO JS==================-->
+        <script src="promo.js"></script>
+
+</body>
+</html>
+
+
+<!--
+<section id="services">
+    <nav class="serv-nav">
+        <a href="./service.html">
+            <div class="b">
+                <img class="s-pic" src="./pictures/service.JPG" alt="serv">
+                    <h2 class="h_service">Dịch Vụ</h2>
+                    
+                    <p class="serv-par">
+                        Chúng tôi cung cấp một loạt các dịch vụ chăm sóc sắc đẹp bao gồm chăm sóc da mặt, điều trị mụn, làm sáng da, trẻ hóa da, và các liệu pháp thư giãn. 
+                        Mỗi dịch vụ của chúng tôi đều được thiết kế để đáp ứng nhu cầu cụ thể của từng khách hàng, giúp bạn cảm thấy thoải mái và tự tin với làn da tươi trẻ và khỏe mạnh.
+                    </p>
+                    <img class="s-pic2" src="./pictures/service2.JPG" alt="serv2">
+
+                    <br>
+                    <p class="serv-par" style="text-decoration: underline;">
+                        Tìm Hiểu Thêm...Nhấp Vào Đây! 👆🏻
+                    </p>
+            </div>
+        </a>
+    </nav>
+</section>
+
+-->

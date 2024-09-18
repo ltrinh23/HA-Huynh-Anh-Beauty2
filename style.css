@@ -1,0 +1,788 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #8BD3CD;
+    align-items: center;
+}
+
+.thumbnail{                /*Logo*/
+    width: 700px;
+    cursor: pointer;        
+    /*display: block;
+    margin-left: auto;*/
+}
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 700px;
+    display: none;
+    /*margin-left: auto;*/
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+} 
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    font-size: 2rem;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.previous{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 4;}    
+}
+
+header {
+    background-color: #8BD3CD;
+    width: 100%;
+    text-align: center;
+    /*padding: 20px 0;*/    /*Review, customer, news, video top bar*/
+}
+header img {
+    max-width: 80%;
+    height: auto;
+}
+
+.menu-container {               /*menu icon*/
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {           /*menu icon*/
+    width: 20px;
+    height: 0.5px;
+    background-color: #F7EF8A;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+.change .bar1 {                 /*menu bar1*/
+    transform: translate(0, 11px) rotate(-45deg);
+} 
+.change .bar2 {                 /*menu bar2*/
+    opacity: 0;
+}
+.change .bar3 {                 /*menu bar3*/
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+.dropbtn {                      /*Drop down button color*/
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    color: #F7EF8A;
+    padding: 7px;
+    font-size: 7px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8%;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #4cbbb2;
+    min-width: 98px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #F7EF8A;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+.dropdown-content a:hover {
+    background-color: #8BD3CD;   
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    font-family: Georgia, serif;
+    border-radius: 8%;
+}
+
+.dropdown:hover .dropbtn {                  /* when hover */
+    background-color: #2ea097;
+}
+#wrapper{                              /* nav for about, service, contact boxes, and small logo*/
+    background-color: #37AFA5;
+    color: #F9F295;
+    padding: 10px;
+    text-align: center;
+    position: relat;
+    z-index: 1000;
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+}
+
+/*================================= TOP BAR ==================================*/
+.top{                                          /*About me, Service, Contact Top bar*/
+    font-family: Snell Roundhand, cursive;  /*can change font later*/
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.small-logo{
+    padding: 20px;
+    width: 5.5rem;
+    float: left;
+}
+
+nav a {                             /*about me, service, contact top bar*/
+    color: #F7EF8A; 
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+h2 {
+    font-family: 'URW Chancery L', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+
+/*============== ABOUT ME SECTION =================*/
+.container1{                    /* The Container Gap*/
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 10rem;       /* Gap BW each post*/
+}
+
+.card__article1{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card__img1{                        /* pfp */
+    width: 328px;
+    border-radius: 1.5rem; 
+}
+
+.card__data1{                       /* Text Board */
+    width: 280px;
+    background-color: #37AFA5;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -25rem;                 /* How far down text board go down */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description1{                /* Text */
+    display: block;
+    font-size: 18px;
+    color: #EDC967;
+    margin-bottom: 0.25rem;
+}
+
+.card__title1{
+    font-size: 20px;
+    color: #EDC967;
+    margin-bottom: 0.75rem
+}
+ 
+/* Naming animations in hover */
+.card__article1:hover .card__data1{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card__article1:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article1:not(:hover){
+    animation: show-over 2s forwards;
+}
+
+.card__article1:not(:hover) .card_data1{
+    animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(-11rem);
+    }
+}
+
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-11rem);
+    }
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(0.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+.zalo{                          /*Zalo QR Code*/
+    height: 50px;
+    width: 50px;
+    border-radius: 0.5rem;
+}
+
+#phone{                         /*Zalo box that moves*/
+    height: 40px;
+    width: 210px;
+    background: linear-gradient(to top, #37AFA5, #8BD3CD);
+    font-family: Georgia, serif;
+    color: #EDC967;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5rem;
+
+    position: sticky;
+    top: 20px;
+    bottom: 20px;
+    left: 50px;
+}
+
+#qr-code{                       /*QR Code is the child of #phone*/
+    height: 60px;
+    width: 60px;
+
+    position: relative;
+    bottom: 60px;
+    right: 30px;
+}
+
+#myBtn {                            /*style for back to the top btn*/
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+    color: white;
+    cursor: pointer;
+    padding: 10px;                      /* making the button smaller + bigger*/
+    border-radius: 4px;
+}
+
+#myBtn:hover {                          /* hover back to the top*/ 
+    background-color: #2ea097;
+}                           
+
+.f-nav, .cust-foot, .r-foot, .vid-foot{
+    color: #EDC967;
+    font-family: Georgia, serif;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-color: #8BD3CD;
+
+}
+
+
+
+
+
+/*============== SOCIALS INFO =================*/
+.social-icons{                      /*Social media styles*/
+    display: flex;
+    width: 100px;
+    gap: 10px;
+}
+
+svg{
+    fill: var(--colorpirmary);
+    width: 25px;
+}
+svg:hover{
+    fill: var(--coloraccent);
+}
+
+/*============== SERVICE SECTION =================*/
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__container{
+    padding-block: 5rem;
+}
+
+.card__content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.card__article{
+    width: 300px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__image{                       /* border around the pictures*/
+    position: relative;
+    background-color: #3fcec2;
+    padding-top: 1.5rem;
+    margin-bottom: -0.75rem;
+}
+
+.card__data{                        /* border around the text (about texts)*/
+    background-color: #37AFA5;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.card__img{                         /* about pics*/
+    width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    border-radius: 8%;
+}
+
+.card__shadow{                      /* little circle behind pictures*/
+    width: 200px;
+    height: 200px;
+    background-color: #14433f; 
+    border-radius: 50%;
+    position: absolute;
+    top: 3.75rem;
+    left: 0;
+    right: 0;
+    margin-inline: start;
+    filter: blur(45px);     
+}
+
+.card__name{
+    font-size: 20px;
+    color: #EDC967;
+    margin-bottom: 0.75rem;
+}
+
+.card__description{
+    font-weight: 500;
+    margin-bottom: 1.75rem;
+    color: #EDC967;
+
+}
+
+.card__button{
+    display: inline-block;
+    background-color: #37AFA5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    color: #EDC967;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* Swiper Class */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    content: '';
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    width: initial;
+    height: initial;
+    font-size: 3rem;
+    color: #EDC967;
+}
+
+.swiper-button-prev{
+    left: 0;
+}
+
+.swiper-button-next{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: hsl(212, 32%, 40%);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #37AFA5;
+}
+
+/*================ EVERY PAGE STYLES =================*/
+.menu-style, .rv-style, .c-style, .vid-style{            /*service, review, customer, video header*/
+    font-size: 40px; 
+    color: #F7EF8A; 
+    font-family: 'Snell Roundhand', cursive;
+    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
+}
+
+/*================ REVIEW =====================*/
+.rv-container{                    /* The Container Gap*/
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    /* Gap BW each post*/
+}
+
+.card__article__rv{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.card__img__rv{                        /* pfp */
+    width: 328px;
+    border-radius: 1.5rem; 
+}
+
+.card__data__rv{                       /* Text Board */
+    width: 280px;
+    background-color: #37AFA5;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -25rem;                 /* How far down text board go down */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description__rv{                /* Text */
+    display: block;
+    font-size: 18px;
+    color: #EDC967;
+    margin-bottom: 0.25rem;
+}
+ 
+/* Naming animations in hover */
+.card__article__rv:hover .card__data__rv{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card__article__rv:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article__rv:not(:hover){
+    animation: show-over 2s forwards;
+}
+
+.card__article__rv:not(:hover) .card_data__rv{
+    animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(-11rem);
+    }
+}
+
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-11rem);
+    }
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(0.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+/*================= CUSTOMER ==================*/
+.c-container{                    /* The Container Gap*/
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    /* Gap BW each post*/
+}
+
+.card__article__c{
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.cust__img{                        /* customer pic */
+    width: 400px;
+    height: 300px;
+    border-radius: 1.5rem; 
+}
+
+.card__data__c{                       /* Text Board */
+    width: 350px;
+    background-color: #37AFA5;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -24rem;                 /* How far down text board go down */
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.card__description__c{                /* Text */
+    display: block;
+    font-size: 18px;
+    color: #EDC967;
+    margin-bottom: 0.25rem;
+}
+ 
+/* Naming animations in hover */
+.card__article__c:hover .card__data__c{
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.card__article__c:hover{
+    animation: remove-overflow 2s forwards;
+}
+
+.card__article__c:not(:hover){
+    animation: show-over 2s forwards;
+}
+
+.card__article__c:not(:hover) .card_data__c{
+    animation: remove-data 1s forwards;
+}
+
+/* Card animation */
+
+@keyframes show-data{
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(-11rem);
+    }
+}
+
+@keyframes remove-overflow{
+    to{
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0%{
+        transform: translateY(-11rem);
+    }
+    50%{
+        transform: translateY(-21rem);
+    }
+    100%{
+        transform: translateY(0.5rem);
+    }
+}
+
+@keyframes show-overflow {
+    0%{
+        overflow: initial;
+        pointer-events: none;
+    }
+    50%{
+        overflow: hidden;
+    }
+}
+
+
+
+.rv-home, .rv-next {
+    margin: 18px;
+    font-size: 18px; 
+}
+.c-home, .c-next, .c-prev{      /*customer page*/
+    margin-left: 18px;
+    font-size: 18px;
+}
+.n-home, .n-next, .n-prev{      /*news page*/
+    margin-left: 18px;
+    font-size: 18px;
+}
+.vid-home, .vid-next, .vid-prev{      /*video page*/
+    margin-left: 18px;
+    font-size: 18px;
+}
+
+
+
+/*================ BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    .card__data{
+        padding: 1rem;
+    }
+} 
+
+@media screen and (max-width: 340px){
+    .container1{
+        margin-inline: 1rem;
+    }
+
+    .card__data1{
+        width: 250px;
+        padding: 1rem;
+    }
+} 
+
+
+/* For medium devices */
+@media screen and (min-width: 768px){
+    .card__content{
+        margin-inline: 3rem;
+    
+    }
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: block;
+    }
+
+    .card__container1{
+        grid-template-columns: repeat (2, 1fr);
+        column-gap: 1.5rem;
+    }
+}
+
+
+/* For large devices */
+@media screen and (min-width: 1120px){
+    .card__container{
+        max-width: 1120px;
+    }
+
+    .swiper-button-next{
+        right: -1rem;
+    }
+
+    .swiper-button-prev{
+        right: -1rem;
+    }
+
+    .container1{
+        height: 100vh;
+    }
+
+    .card__container1{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card__img1{
+        width: 348px;
+    }
+
+    .card__data1{
+        width: 316px;
+        padding-inline: 2.5rem;
+    }
+}
+
+
+
+/*========
+
+.card__container1{                  /* how far down is each text is showing
+display: grid;
+row-gap: 3.5rem;
+}
+
+
+==========*/

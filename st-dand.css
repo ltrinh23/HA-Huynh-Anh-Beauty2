@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background:#37AFA5;
+    align-items: center;
+}
+
+.delayed-appear {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 5s; /* Delay the transition by 5 seconds */
+}
+
+/* Show the image after the delay */
+body.loaded .delayed-appear {
+    opacity: 1;
+}
+.dandelion {
+    position: relative;
+}
+.seed{          /*"container"*/
+    position: relative;
+    width: 17px;
+    height: 17px;
+    background: #F9F295;
+    border-radius: 50%; 
+    animation: blow 5s infinite linear;
+    transform-origin: center;
+}
+.seed:nth-child(1) {
+    top: 10x;
+    animation-delay: 2s;  /*2*/
+}   
+.seed:nth-child(2) {
+    top: 500px;
+    left: 600px;
+    animation-delay: 0s; /*0*/
+}
+.seed:nth-child(3) {
+    top: -700px;
+    left: 950px;
+    animation-delay: 1s; /*1*/
+}
+.seed:nth-child(4) {
+    top: -1000px;
+    left: -700px;
+    animation-delay: 2s;/*2*/
+}
+.seed:nth-child(5) {    
+    top: 185px;
+    left: 950px;
+    animation-delay: 1s; /*0*/
+}   
+.seed:nth-child(6) {
+    top: -460px;
+    left: 620px;
+    animation-delay: 2s; /*2*/
+    }
+.seed:nth-child(7) {        /*dandelion that hit right at the logo */
+    top: -900px;
+    left: -900px;
+    animation-delay: 0s; /*1*/
+}
+.seed:nth-child(8) {
+    top: -300px;
+    left: 850px;
+    animation-delay: 2s; /*2*/
+}
+    
+    /* Add more nth-child selectors for additional seeds */
+    
+@keyframes blow {
+    0% {
+    transform: rotate(360deg) translateY(0);
+    opacity: 0;
+    }
+    100% {
+    transform: rotate(0deg) translateY(-300px);
+    opacity: 1;
+    }
+}
+
+
+/*================ BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+    #myImage {
+        width: 35rem;
+    }
+} 
+
+@media screen and (max-width: 340px){
+    #myImage {
+        width: 35rem;
+    }
+} 
+
+
+/* For medium devices */
+@media screen and (min-width: 768px){
+    #myImage {
+        width: 40rem;
+    }
+}
+
+
+/* For large devices */
+@media screen and (min-width: 1120px){
+    #myImage {
+        width: 50rem;
+    }
+}
+
+
+
+/*
+
+
+#myImage {
+    opacity: 0;
+    filter: blur(20px);
+    transition: filter 5s, opacity 40s;
+}
+
+@keyframes showHide {
+    0% {
+      width:0%;
+     }
+    40% {
+      width:0%;
+      }
+    60% {
+      width:0%;
+      }
+    100% {
+      width:100%;
+      }
+}
+.original-logo{
+    width: 50rem;
+    margin: center;
+    
+}
+.fadingEffect {
+    position:absolute;
+    top:0; bottom:0; right:0;
+    width:100%;
+    background: #8BD3CD;
+    animation: showHide 5s ease-in;
+}
+
+
+    0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+    }
+    100% {
+    transform: translate(300px, -300px) scale(0.5);
+    opacity: 0;
+    }
+
+    
+*/
