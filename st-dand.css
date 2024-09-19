@@ -2,11 +2,11 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 body{
     background:#37AFA5;
-    align-items: center;
 }
 
 .delayed-appear {
@@ -18,26 +18,30 @@ body{
 /* Show the image after the delay */
 body.loaded .delayed-appear {
     opacity: 1;
+    width: 25rem; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .dandelion {
     position: relative;
 }
 .seed{          /*"container"*/
     position: relative;
-    width: 17px;
-    height: 17px;
+    width: 12px;
+    height: 12px;
     background: #F9F295;
     border-radius: 50%; 
     animation: blow 5s infinite linear;
     transform-origin: center;
 }
 .seed:nth-child(1) {
-    top: 10x;
+    top: -900x;
     animation-delay: 2s;  /*2*/
 }   
 .seed:nth-child(2) {
-    top: 500px;
-    left: 600px;
+    top: -900px;
+    left: -600px;
     animation-delay: 0s; /*0*/
 }
 .seed:nth-child(3) {
@@ -91,11 +95,21 @@ body.loaded .delayed-appear {
     #myImage {
         width: 35rem;
     }
+
+    .seed{          /*"container"*/
+        width: 15px;
+        height: 15px;
+    }
 } 
 
 @media screen and (max-width: 340px){
     #myImage {
         width: 35rem;
+    }
+    
+    .seed{          /*"container"*/
+        width: 15px;
+        height: 15px;
     }
 } 
 
@@ -105,6 +119,11 @@ body.loaded .delayed-appear {
     #myImage {
         width: 40rem;
     }
+
+    .seed{          /*"container"*/
+        width: 17px;
+        height: 17px;
+    }
 }
 
 
@@ -112,6 +131,11 @@ body.loaded .delayed-appear {
 @media screen and (min-width: 1120px){
     #myImage {
         width: 50rem;
+    }
+
+    .seed{          /*"container"*/
+        width: 17px;
+        height: 17px;
     }
 }
 
