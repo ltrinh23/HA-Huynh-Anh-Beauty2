@@ -1,14 +1,18 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-}
+html, 
+body {
+    width: auto!important; 
+    overflow-x: hidden!important
+} 
 
-body{
+body {
     background:#37AFA5;
-}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+ /* Stop Website from scrolling side to side */
 
+}
 .delayed-appear {
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -20,59 +24,58 @@ body.loaded .delayed-appear {
     opacity: 1;
     width: 25rem; 
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+
 }
 .dandelion {
     position: relative;
 }
 .seed{          /*"container"*/
     position: relative;
-    width: 12px;
-    height: 12px;
+    width: 17px;
+    height: 17px;
     background: #F9F295;
     border-radius: 50%; 
     animation: blow 5s infinite linear;
     transform-origin: center;
 }
 .seed:nth-child(1) {
-    top: -900x;
-    animation-delay: 2s;  /*2*/
+    top: 100px;
+    animation-delay: 2s;
 }   
 .seed:nth-child(2) {
-    top: -900px;
-    left: -600px;
-    animation-delay: 0s; /*0*/
+    top: 80px;
+    left: 500px;
+    animation-delay: 0s;
 }
 .seed:nth-child(3) {
-    top: -700px;
-    left: 950px;
-    animation-delay: 1s; /*1*/
+    top: -400px;
+    left: 560px;
+    animation-delay: 1s;
 }
 .seed:nth-child(4) {
-    top: -1000px;
-    left: -700px;
-    animation-delay: 2s;/*2*/
+    top: -120px;
+    left: 580px;
+    animation-delay: 2s;
 }
-.seed:nth-child(5) {    
-    top: 185px;
-    left: 950px;
-    animation-delay: 1s; /*0*/
+.seed:nth-child(5) {    /*dandelion that hit right at the logo */
+    top: 140px;
+    left: 600px;
+    animation-delay: 0s;
 }   
 .seed:nth-child(6) {
     top: -460px;
     left: 620px;
-    animation-delay: 2s; /*2*/
+    animation-delay: 2s;
     }
-.seed:nth-child(7) {        /*dandelion that hit right at the logo */
-    top: -900px;
-    left: -900px;
-    animation-delay: 0s; /*1*/
+.seed:nth-child(7) {
+    top: 320px;
+    left: 640px;
+    animation-delay: 1s;
 }
 .seed:nth-child(8) {
     top: -300px;
-    left: 850px;
-    animation-delay: 2s; /*2*/
+    left: 660px;
+    animation-delay: 2s;
 }
     
     /* Add more nth-child selectors for additional seeds */
@@ -96,18 +99,18 @@ body.loaded .delayed-appear {
         width: 35rem;
     }
 
-    .seed{          /*"container"*/
-        width: 15px;
-        height: 15px;
+    .seed span{          /*"container"*/
+        width: 12px;
+        height: 12px;
     }
-} 
+}
 
 @media screen and (max-width: 340px){
     #myImage {
         width: 35rem;
     }
     
-    .seed{          /*"container"*/
+    .seed span{          /*"container"*/
         width: 15px;
         height: 15px;
     }
@@ -120,7 +123,7 @@ body.loaded .delayed-appear {
         width: 40rem;
     }
 
-    .seed{          /*"container"*/
+    .seed span{          /*"container"*/
         width: 17px;
         height: 17px;
     }
@@ -133,7 +136,7 @@ body.loaded .delayed-appear {
         width: 50rem;
     }
 
-    .seed{          /*"container"*/
+    .seed span{          /*"container"*/
         width: 17px;
         height: 17px;
     }
