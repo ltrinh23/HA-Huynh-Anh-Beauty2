@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0; /**/
 }
 
 body{
-    background-color: #8BD3CD;
+    background-image: url("./pictures/bg2.JPG");    /*this is the set up for now*/
+    background-size: 2000px 3200px;
     align-items: center;
 }
 
@@ -71,7 +72,7 @@ header img {
 .bar1, .bar2, .bar3 {           /*menu icon*/
     width: 20px;
     height: 0.5px;
-    background-color: #F7EF8A;
+    background-color: #3D6763;
     margin: 3px 0;
     transition: 0.4s;
 }
@@ -86,8 +87,8 @@ header img {
 }
 
 .dropbtn {                      /*Drop down button color*/
-    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
-    color: #F7EF8A;
+    background: linear-gradient(to bottom, #54a199, #8BD3CD);
+    color: #3D6763;
     padding: 7px;
     font-size: 7px;
     border: none;
@@ -105,14 +106,14 @@ header img {
     display: none;
     position: absolute;
     right: 0;
-    background-color: #4cbbb2;
+    background-color: #8BD3CD;
     min-width: 98px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: #F7EF8A;
+    color: #3D6763;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -139,14 +140,14 @@ header img {
     text-align: center;
     position: relat;
     z-index: 1000;
-    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
-}
+    background-image: url("./pictures/bg2.JPG");    /*this is the set up for now*/
+    background-size: 2000px 3200px;}
 
 /*================================= TOP BAR ==================================*/
 .top{                                          /*About me, Service, Contact Top bar*/
     font-family: Snell Roundhand, cursive;  /*can change font later*/
     font-weight: bold;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .small-logo{
@@ -156,7 +157,7 @@ header img {
 }
 
 nav a {                             /*about me, service, contact top bar*/
-    color: #F7EF8A; 
+    color: #3D6763;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.2em;
@@ -190,8 +191,7 @@ h2 {
 
 .card__data1{                       /* Text Board */
     width: 280px;
-    background-color: #37AFA5;
-    padding: 1.5rem 2rem;
+    background-image: url("./pictures/bg1.JPG");     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;
@@ -206,13 +206,13 @@ h2 {
 .card__description1{                /* Text */
     display: block;
     font-size: 18px;
-    color: #EDC967;
+    color: #3D6763;
     margin-bottom: 0.25rem;
 }
 
 .card__title1{
     font-size: 20px;
-    color: #EDC967;
+    color: #3D6763;
     margin-bottom: 0.75rem
 }
  
@@ -285,7 +285,7 @@ h2 {
     width: 210px;
     background: linear-gradient(to top, #37AFA5, #8BD3CD);
     font-family: Georgia, serif;
-    color: #EDC967;
+    color: #3D6763;
     font-weight: bold;
     text-align: center;
     border-radius: 0.5rem;
@@ -314,8 +314,8 @@ h2 {
     font-size: 15px;
     border: none;
     outline: none;
-    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
-    color: white;
+    background: linear-gradient(to bottom, #54a199, #8BD3CD);
+    color: #3D6763;
     cursor: pointer;
     padding: 10px;                      /* making the button smaller + bigger*/
     border-radius: 4px;
@@ -326,12 +326,11 @@ h2 {
 }                           
 
 .f-nav, .cust-foot, .r-foot, .vid-foot{
-    color: #EDC967;
+    color: #3D6763;
     font-family: Georgia, serif;
     text-align: center;
     font-weight: bold;
     margin-top: 20px;
-    border-color: #8BD3CD;
 
 }
 
@@ -388,13 +387,13 @@ img{
 
 .card__image{                       /* border around the pictures*/
     position: relative;
-    background-color: #3fcec2;
+    background-image: url("./pictures/bg1.JPG");
     padding-top: 1.5rem;
     margin-bottom: -0.75rem;
 }
 
 .card__data{                        /* border around the text (about texts)*/
-    background-color: #37AFA5;
+    background-image: url("./pictures/bg2.JPG");
     padding: 1.5rem 2rem;
     border-radius: 1rem;
     text-align: center;
@@ -425,23 +424,23 @@ img{
 
 .card__name{
     font-size: 20px;
-    color: #EDC967;
+    color: #3D6763;
     margin-bottom: 0.75rem;
 }
 
 .card__description{
     font-weight: 500;
     margin-bottom: 1.75rem;
-    color: #EDC967;
+    color: #3D6763;
 
 }
 
 .card__button{
     display: inline-block;
-    background-color: #37AFA5;
+    background-image: url("./pictures/bg2.JPG");    
     padding: 0.75rem 1.5rem;
     border-radius: 0.25rem;
-    color: #EDC967;
+    color: #3D6763;
     font-weight: 600;
     font-size: 15px;
 }
@@ -457,7 +456,7 @@ img{
     width: initial;
     height: initial;
     font-size: 3rem;
-    color: #EDC967;
+    color: #3D6763;
 }
 
 .swiper-button-prev{
@@ -474,16 +473,15 @@ img{
 }
 
 .swiper-pagination-bullet-active{
-    background-color: #37AFA5;
+    background-color: #3D6763;
 }
 
 /*================ EVERY PAGE STYLES =================*/
 .menu-style, .rv-style, .c-style, .vid-style{            /*service, review, customer, video header*/
     font-size: 40px; 
-    color: #F7EF8A; 
+    color: #3D6763; 
     font-family: 'Snell Roundhand', cursive;
-    background: linear-gradient(to bottom, #37AFA5, #8BD3CD);
-}
+    background-image: url("./pictures/bg2.JPG"); }
 
 /*================ REVIEW =====================*/
 .rv-container{                    /* The Container Gap*/
@@ -506,8 +504,7 @@ img{
 
 .card__data__rv{                       /* Text Board */
     width: 280px;
-    background-color: #37AFA5;
-    padding: 1.5rem 2rem;
+    background-image: url("./pictures/bg1.JPG");     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;
@@ -522,7 +519,7 @@ img{
 .card__description__rv{                /* Text */
     display: block;
     font-size: 18px;
-    color: #EDC967;
+    color: #3D6763;
     margin-bottom: 0.25rem;
 }
  
@@ -622,7 +619,7 @@ img{
 .card__description__c{                /* Text */
     display: block;
     font-size: 18px;
-    color: #EDC967;
+    color: #3D6763;
     margin-bottom: 0.25rem;
 }
  

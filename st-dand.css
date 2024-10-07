@@ -5,7 +5,8 @@ body {
 } 
 
 body {
-    background:#37AFA5;
+    background-image: url("./pictures/bg2.JPG");    /*this is the set up for now*/
+    background-size: 2000px 3200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +34,7 @@ body.loaded .delayed-appear {
     position: relative;
     width: 17px;
     height: 17px;
-    background: #F9F295;
+    background: #3D6763;
     border-radius: 50%; 
     animation: blow 5s infinite linear;
     transform-origin: center;
