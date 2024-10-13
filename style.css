@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("./pictures/bg2.JPG");    /*this is the set up for now*/
+    background-image: url("../pictures/bg2.JPG");    /*this is the set up for now*/
     background-size: 2000px 3200px;
     align-items: center;
 
