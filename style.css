@@ -5,7 +5,7 @@
 }
 
 body{
-    background-image: url("../pictures/bg2.JPG");    /*this is the set up for now*/
+    background-image: url("./pictures/bg2.jpg");    /*this is the set up for now*/
     background-size: 2000px 3200px;
     align-items: center;
 
@@ -141,7 +141,7 @@ header img {
     text-align: center;
     position: relat;
     z-index: 1000;
-    background-image: url("./pictures/bg2.JPG");    /*this is the set up for now*/
+    background-image: url("./pictures/bg2.jpg");    /*this is the set up for now*/
     background-size: 2000px 3200px;}
 
 /*================================= TOP BAR ==================================*/
@@ -192,7 +192,7 @@ h2 {
 
 .card__data1{                       /* Text Board */
     width: 280px;
-    background-image: url("./pictures/bg1.JPG");     padding: 1.5rem 2rem;
+    background-image: url("./pictures/bg1.jpg");     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;

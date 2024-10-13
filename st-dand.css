@@ -5,7 +5,7 @@ body {
 } 
 
 body {
-    background-image: url("../pictures/bg2.JPG");    /*this is the set up for now*/
+    background-image: url("./pictures/bg2.jpg");    /*this is the set up for now*/
     background-size: 2000px 3200px;
     display: flex;
     justify-content: center;
