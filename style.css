@@ -192,7 +192,8 @@ h2 {
 
 .card__data1{                       /* Text Board */
     width: 280px;
-    background-image: url("./pictures/bg1.jpg");     padding: 1.5rem 2rem;
+    background-image: url("./pictures/bg1.jpg");     
+    padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
     position: absolute;
@@ -389,7 +390,6 @@ img{
 .card__image{                       /* border around the pictures*/
     position: relative;
     background-image: url("./pictures/bg1.jpg");
-    background-size: 2000px 3200px;
     align-items: center;
     padding-top: 1.5rem;
     margin-bottom: -0.75rem;
@@ -397,7 +397,6 @@ img{
 
 .card__data{                        /* border around the text (about texts)*/
     background-image: url("./pictures/bg2.jpg");
-    background-size: 2000px 3200px;
     align-items: center;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
