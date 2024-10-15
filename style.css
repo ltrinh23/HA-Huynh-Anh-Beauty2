@@ -192,7 +192,7 @@ h2 {
 
 .card__data1{                       /* Text Board */
     width: 280px;
-    background-image: url("./pictures/bg1.jpg");     
+    background-image: url("./pictures/background.jpg");     
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
@@ -389,7 +389,7 @@ img{
 
 .card__image{                       /* border around the pictures*/
     position: relative;
-    background-image: url("./pictures/bg1.jpg");
+    background-image: url("./pictures/background.jpg");
     align-items: center;
     padding-top: 1.5rem;
     margin-bottom: -0.75rem;
@@ -513,7 +513,7 @@ img{
 
 .card__data__rv{                       /* Text Board */
     width: 280px;
-    background-image: url("./pictures/bg1.jpg");    
+    background-image: url("./pictures/background.jpg");    
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
@@ -613,7 +613,7 @@ img{
 
 .card__data__c{                       /* Text Board */
     width: 350px;
-    background-image: url("./pictures/bg1.jpg");
+    background-image: url("./pictures/background.jpg");
     padding: 1.5rem 2rem;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, 0.15);
     border-radius: 1rem;
